@@ -1,0 +1,22 @@
+{
+  "name": "unmss",
+  "description": "A converter for Advanced Mario Sequencer files.",
+  "version": "1.0.0",
+  "author": "TheLastZombie",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "scribbletune": "^3.5.0",
+    "xml2js": "^0.4.23"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLastZombie/unmss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheLastZombie/unmss/issues"
+  },
+  "homepage": "https://github.com/TheLastZombie/unmss#readme"
+}
