@@ -6,7 +6,7 @@ const childProcess = require("child_process");
 const path = require("path");
 
 const input = fs.readFileSync(process.argv[2], "utf8");
-const output = process.argv[3];
+const output = process.argv[3] || path.parse(process.argv[2]).name + ".wav";
 
 const notes = require("./data/notes");
 const tracks = require("./data/tracks");
