@@ -3,6 +3,7 @@ const xml2js = require("xml2js");
 const JZZ = require("jzz");
 require("jzz-midi-smf")(JZZ);
 const childProcess = require("child_process");
+const pathToFfmpeg = require("ffmpeg-static");
 const path = require("path");
 
 const input = fs.readFileSync(process.argv[2], "utf8");
@@ -62,7 +63,7 @@ xml2js.parseString(input, (_err, result) => {
 
 	// Stage 3: Merge WAVs into one single file
 
-	childProcess.execFileSync("ffmpeg", [
+	childProcess.execFileSync(pathToFfmpeg, [
 		"-y",
 		...tracks.map(x => ["-i", x + ".wav"]).flat(),
 		"-filter_complex",

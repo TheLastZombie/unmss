@@ -6,7 +6,6 @@ unmss is a command-line open source converter for Advanced Mario Sequencer (.MSS
 
 - [Node.js](https://nodejs.org/)
 - [Fluidsynth](http://www.fluidsynth.org/)
-- [FFmpeg](https://ffmpeg.org/)
 
 ## Usage
 

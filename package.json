@@ -8,6 +8,7 @@
     "start": "node ."
   },
   "dependencies": {
+    "ffmpeg-static": "^4.2.5",
     "jzz": "^1.0.6",
     "jzz-midi-smf": "^1.3.5",
     "xml2js": "^0.4.23"
